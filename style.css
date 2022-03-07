@@ -68,7 +68,7 @@ body {
   font-size: 1em;
   line-height: 1.7em;
   color: #777777;
-  background: #F30152;
+  background: #ffbf14;
   font-weight: normal;
 }
 
@@ -131,8 +131,8 @@ blockquote p {
 }
 
 .curveUpColor, .curveDownColor {
-  fill: #F30152;
-  stroke: #F30152;
+  fill: #ffbf14;
+  stroke: #ffbf14;
   position: absolute;
   left: 0;
   z-index: 1;
