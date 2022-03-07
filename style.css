@@ -31,7 +31,7 @@ Grey #ECF0F1
 */
 
 /* *********************************************************
-  General Styling 
+  General Styling
 ********************************************************* */
 
 *, *:before, *:after {
@@ -68,15 +68,16 @@ body {
   font-size: 1em;
   line-height: 1.7em;
   color: #777777;
+  background: #F30152;
   font-weight: normal;
 }
 
 body, input, textarea {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: LatoLatin,LatoLatin-fallback,sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6, .navigation a, .btn, .filters .filter {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: LatoLatin,LatoLatin-fallback,sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -130,8 +131,8 @@ blockquote p {
 }
 
 .curveUpColor, .curveDownColor {
-  fill: #fff;
-  stroke: #fff;
+  fill: #F30152;
+  stroke: #F30152;
   position: absolute;
   left: 0;
   z-index: 1;
@@ -159,7 +160,7 @@ blockquote p {
 }
 
 /* *********************************************************
-  Buttons 
+  Buttons
 ********************************************************* */
 
 .btn {
@@ -303,7 +304,7 @@ blockquote p {
 }
 
 /* *********************************************************
-  Header 
+  Header
 ********************************************************* */
 
 #top-header {
@@ -320,6 +321,34 @@ blockquote p {
 
 #top-header .grid {
   overflow: visible;
+}
+
+.icons {
+  padding: 0 10px 0 10px;
+  color: #fff;
+}
+
+.icons:hover {
+  color: #004371;
+  transition: 0.5s;
+}
+
+.longo_link {
+  margin-top: 20px !important;
+  font-weight: 600 !important;
+}
+
+.longo_link p:hover {
+  color: #004371 !important;
+  transition: 0.5s;
+}
+
+.longoGroup_logo {
+height: 30%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-top: 30px;
 }
 
 .logo {
@@ -394,7 +423,7 @@ blockquote p {
 }
 
 /* *********************************************************
-  Navigation 
+  Navigation
 ********************************************************* */
 
 .navigation input[type=checkbox] {
@@ -479,7 +508,7 @@ blockquote p {
 }
 
 /* *********************************************************
-  Home Slider 
+  Home Slider
 ********************************************************* */
 
 .header-carousel {
@@ -505,16 +534,18 @@ blockquote p {
 }
 
 /* *********************************************************
-  Parallax 
+  Parallax
 ********************************************************* */
 
 .parallax-section {
   z-index: -1;
   clear: both;
-  background-image: url('images/home.jpg');
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/img_bg_1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
   background-position: center center;
+  height: 1000px;
 }
 
 .parallax2 {
@@ -527,7 +558,7 @@ blockquote p {
 }
 
 .parallax-section .content-header, .home-slider .content-header {
-  padding: 145px 0 250px;
+  padding: 55px 0 250px;
 }
 
 .parallax2 .content {
@@ -553,7 +584,7 @@ blockquote p {
 }
 
 .parallax-section .content h2, .content-header h2 {
-  font-size: 2.5em;
+  font-size: 4.5em;
 }
 
 .parallax-section .content p, .top-slider .content-header p, .home-slider .content p {
@@ -724,7 +755,7 @@ blockquote p {
 }
 
 /* *********************************************************
-  Clients Logos Section 
+  Clients Logos Section
 ********************************************************* */
 
 .cl-logo-carousel .item figure {
@@ -806,7 +837,7 @@ blockquote p {
 }
 
 /* *********************************************************
-  Quotes Section 
+  Quotes Section
 ********************************************************* */
 .quotes-icon {
   color: #1abc9c;
@@ -1208,7 +1239,7 @@ address i {
   color: #484f58;
   font-size: 1.125em;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-} 
+}
 
 .phone {
   line-height: 30px;
@@ -1430,7 +1461,7 @@ footer p, footer a {
   text-align: center;
 }
 
-/*------------------------------------------------------------- 
+/*-------------------------------------------------------------
   Team
 ---------------------------------------------------------------*/
 
@@ -1604,7 +1635,7 @@ footer p, footer a {
   }
 }
 
-/*------------------------------------------------------------- 
+/*-------------------------------------------------------------
   Media queries
 ---------------------------------------------------------------*/
 
@@ -1734,6 +1765,10 @@ footer p, footer a {
     padding: 145px 0;
   }
 
+  .parallax-section {
+    height: 800px;
+  }
+
   .parallax-section .content h2, .content-header h2  {
     font-size: 2em;
   }
@@ -1749,9 +1784,13 @@ footer p, footer a {
 }
 
 @media handheld, only screen and (max-width: 480px) {
-  
+
   .header-carousel {
     height: 620px;
+  }
+
+  .coverUpColor {
+    margin-top: -115px;
   }
 
   .social-set a {
@@ -1793,7 +1832,7 @@ footer p, footer a {
   }
 
   .parallax-section .content h2, .content-header h2 {
-    font-size: 1.2em;
+    font-size: 3em;
   }
 
   .parallax-section .content p, .top-slider .content-header p, .home-slider .content p {
